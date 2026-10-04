@@ -80,7 +80,7 @@ To point the CLI at a different server, set `INVENTORY_API_URL`.
   "brands": "Silk",
   "ingredients_text": "Filtered water, almonds, cane sugar",
   "barcode": "025293600010",
-  "price": 4.99,
+  "price": 530,
   "stock": 25
 }
 ```
@@ -94,12 +94,12 @@ To point the CLI at a different server, set `INVENTORY_API_URL`.
 # Add an item
 curl -X POST http://127.0.0.1:5000/inventory \
   -H "Content-Type: application/json" \
-  -d '{"product_name": "Oat Milk", "brands": "Oatly", "price": 3.5, "stock": 10}'
+  -d '{"product_name": "Oat Milk", "brands": "Oatly", "price": 420, "stock": 10}'
 
 # Update price and stock
 curl -X PATCH http://127.0.0.1:5000/inventory/1 \
   -H "Content-Type: application/json" \
-  -d '{"price": 5.25, "stock": 30}'
+  -d '{"price": 580, "stock": 30}'
 
 # Delete an item
 curl -X DELETE http://127.0.0.1:5000/inventory/1
@@ -107,7 +107,7 @@ curl -X DELETE http://127.0.0.1:5000/inventory/1
 # Import a product from OpenFoodFacts by barcode
 curl -X POST http://127.0.0.1:5000/inventory/import \
   -H "Content-Type: application/json" \
-  -d '{"barcode": "3017620422003", "price": 5.99, "stock": 12}'
+  -d '{"barcode": "3017620422003", "price": 600, "stock": 12}'
 ```
 
 ### Error responses
@@ -145,7 +145,7 @@ Found 1 product(s):
   Name:         Nutella
   ...
 Enter a number to add it to your inventory (or press Enter to skip): 1
-Price: 5.99
+Price: 600
 Stock quantity: 12
 Item added to inventory:
 ```

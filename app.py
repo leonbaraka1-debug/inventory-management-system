@@ -41,7 +41,7 @@ def seed_inventory():
             "brands": "Jif",
             "ingredients_text": "Roasted peanuts, sugar, palm oil, salt",
             "barcode": "051500255162",
-            "price": 349.00,
+            "price": 3.49,
             "stock": 40,
         },
     ]
